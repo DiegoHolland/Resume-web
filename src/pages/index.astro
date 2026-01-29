@@ -1,17 +1,99 @@
 ---
+import Contact from "../componet/Contact.astro"
+import Languages from "../componet/Languages.astro"
+import Porfile from "../componet/Porfile.astro"
+import Skills from "../componet/Skills.astro"
+import WorkExperience from "../componet/WorkExperience.astro"
+import Education from "../componet/Education.astro"
 
+import "../Styles/globla.css"
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>DIEGO_HOLLAND</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="summaryLeft">
+			<div>
+				<img src="/public/img/Diego Holland.jpg" alt="Diego Holland" />
+			</div>
+			<div>
+				<Contact />
+				<Skills />
+				<Languages />
+			</div>
+		</div>
+		<div class="summaryRight">
+			<h1>Diego Holland</h1>
+			<h3>Junior Front-End Developer</h3>
+			<Porfile />
+			<WorkExperience />
+			<Education />
+		</div>
 	</body>
 </html>
+
+<style>
+	body{
+		display: grid;
+		grid-template-columns: 30% 70%;
+		min-height: 100vh;
+	}
+
+	div {
+		padding: 1rem;
+	}
+
+	.summaryLeft{
+		background-color: #222;
+		color: white;
+		padding-left: 20%;
+		border-radius: 0 25px 25px 0;
+		font-weight: 200;
+
+	}
+
+	.summaryLeft img{
+		max-width: 40%;
+		border-radius: 100%;
+		margin-bottom: -3rem;
+	}
+
+	.summaryRight{
+		margin-right: 30%;
+		margin-left: 7%;
+	}
+
+	h1{
+		font-size: 7rem;
+	}
+
+	/* Responsive Design */
+
+	@media (min-width: 480px) {
+		body{
+			font-size: 1.5rem;
+			grid-template-columns: 40% 60%;
+			font-weight: 400;
+		}
+
+		.summaryLeft img{
+			max-width: 80%;
+			margin-bottom: 1rem;
+		}
+
+		.summaryLeft{
+			padding-left: 10%;
+		}
+		.summaryRight{
+			margin-right: 20%;
+			margin-left: 5%;
+		}
+	}
+</style>
