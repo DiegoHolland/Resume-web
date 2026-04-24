@@ -1,11 +1,18 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Diego Holland - Midlands Toyota
+
+FN:Diego Holland
+N:Holland;Diego;;;
 ORG:Midlands Toyota
 TITLE:Sales Consultant
+
 TEL:+18392780101
 EMAIL:dholland@midlandstoyo.com
+
 ADR:;;240 Killian Commons Parkway;Columbia;SC;29203;USA
-URL:https://diegoHolland.dev/Toyota
-PHOTO;VALUE=URI:https://diegoholland.dev/img/Toyota/diego-holland-toyota.png
+
+URL:https://diegoholland.dev/Toyota
+
+PHOTO;TYPE=JPEG:https://diegoholland.dev/img/Toyota/diego-holland-toyota.png
+
 END:VCARD
