@@ -1,23 +1,35 @@
 ---
 ---
 <div>
-    <a href="tel:+18392780101">
+    <a href="tel:+18392780101" class="button">
         Call me
+    </a>
+</div>
+<div>
+    <a href="/contacto.vcf" download class="buttonSecundary">
+        Save my contact
     </a>
 </div>
 
 <style>
     div{
-        margin-top: 2rem;
-        width: 100%;
+        margin-top: .75rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    a{
+    .button{
         background-color: #EB0A1E;
         padding: 0.75rem 4rem;
         border-radius: 1rem ;
         color: #fff;
+        border: solid 1px #EB0A1E;
+    }
+    .buttonSecundary{
+        background-color: #fff;
+        color: #EB0A1E;
+        padding: 0.75rem 4rem;
+        border-radius: 1rem ;
+        border: solid 1px #EB0A1E;
     }
 </style>
